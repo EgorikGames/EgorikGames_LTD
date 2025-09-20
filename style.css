@@ -1,0 +1,135 @@
+/* Общие стили */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #4b005a;
+}
+
+header {
+    background-color: #4b005a;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 960px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #4b005a;
+}
+
+footer {
+    background-color: #4b005a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Стили для главной страницы */
+.hero {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.featured {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+/* Стили для страницы игр */
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.game-item {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.game-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стили для блога */
+#blog-posts {
+    margin-bottom: 20px;
+}
+
+.blog-post {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-post h3 {
+    margin-top: 0;
+}
+
+#load-more {
+    background-color: #4b005a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Стили для страниц блога */
+article {
+    line-height: 1.6;
+}
+
+.post-date {
+    font-style: italic;
+    color: #4b005a;
+    margin-bottom: 10px;
+}
+
+/* Адаптивные стили (базовые) */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .game-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-item {
+        width: 100%;
+    }
+}
